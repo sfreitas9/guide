@@ -3,8 +3,13 @@ title: Use the Spread Operator on Arrays
 ---
 ## Use the Spread Operator on Arrays
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/front-end-libraries/redux/use-the-spread-operator-on-arrays/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
-
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
-
 <!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+<p>Use E6's spread syntax, <code class="language-text">[...arrToCopy]</code>, which allows you to clone the contents of an array.  No changes are made to the original array. This syntax also allows you to add new items <code class="language-text">[...arrToCopy, 'new item1', 'new item2']</code>.  Now you can return the new To Do item at the end of a new array, leaving state unmutated:</p>
+<div>
+  <pre class="language-react.js">
+    <code class="language-react.js">
+      return [...state,action.todo];
+    </code>
+  </pre>
+</div>
+
